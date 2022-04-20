@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*
+    * Estilizando as Main
+*/
+
+.homepage, .gerenciarnoticia, .deletarnoticia, .editarnoticia {
+    display: flex;
+    justify-content: center;
+}
+
+.vernoticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*
+    * Estilizando o Header/Navbar
+*/
+
+.logo h1 {
+    color: #7FFFD4;
+}
+
+.logo span {
+    color: #66CDAA;
+}
+
+nav {
+    display: flex;
+    background-color: #3CB371;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.bar-search {
+    width: 400px;
+    outline: none;
+    border: none;
+    background-color: #3CB371;
+    border-bottom: 1px solid #7FFFD4;
+    padding: 2px;
+}
+
+.bar-search::placeholder {
+    color: #7FFFD4;
+    font-size: 16px;
+}
+
+/* 
+    * Estilizando a wave
+*/
+
+.wave {
+    height: 200px;
+}
+
+/*
+    * Estilizando a Main da (HomePage.php)
+*/
+
+.box {
+    width: 90%;
+    background-color: #7FFFD4;
+    padding: 20px;
+    display: flex;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    background-image: url(../../../Assets/idealizadores.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.titulo h1 {
+    color: #111;
+}
+
+.p1 {
+    color: #7FFFD4;
+}
+
+.p2 {
+    color: #66CDAA;
+}
+
+.nomes {
+    color: #afaaaa;
+}
+
+.sobre {
+    padding: 10px;
+}
+
+/*
+    * Estilizando a Main da (GerenciarNoticia.php)
+*/
+
+.box-options {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.op {
+    background-color: #3CB371;
+    margin: 5px;
+    width: 500px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #7FFFD4;
+}
+
+.fileira1 a:hover {
+    text-decoration: none;
+    color: #66CDAA;
+}
+
+.fileira2 a:hover {
+    text-decoration: none;
+    color: #66CDAA;
+}
+
+.op h2 {
+    font-size: 32px;
+}
+
+/*
+    * Estilizando nosso Formulário de Cadastro de Notícias
+*/
+
+.box-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.titulo, .manchete, .imagem-link, .categoria, .noticia-escrita, .btn-cadastrarnoticia {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titulo label, .manchete label, .imagem-link label, .categoria label, .noticia-escrita label {
+    color: #2E8B57;
+    padding: 5px 0;
+}
+
+.forms-cadastrar-noticia {
+    width: 60%;
+    background-color: #66CDAA;
+}
+
+.imagem-link {
+    width: 50%;
+    float: left;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.header-forms h2 {
+    padding: 10px;
+    text-align: center;
+    color: #2F4F4F;
+}
+
+.main-forms {
+    padding: 10px;
+}
+
+.ipt-titulo, .ipt-manchete, .ipt-imagem, .select-categoria, .textarea-conteudo {
+    outline: none;
+    padding: 10px;
+    background-color: #7FFFD4;
+    border: 1px solid #000;
+}
+
+.ipt-submit {
+    width: 50%;
+    padding: 10px;
+    background-color: #2F4F4F;
+    border: 1px solid #000;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.btn-cadastrarnoticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    * Estilizando o Footer
+*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #3CB371;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.noti {
+    color: #7FFFD4;
+}
+
+.cidade {
+    color: #66CDAA;
+}
+
+/*
+    * Estilizando a page VerNoticia.php
+*/
+
+.noticia {
+    width: 70%;
+}
+
+.titulo-noticia {
+    font-size: 32px;
+    padding: 10px;
+}
+
+.manchete-noticia {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.info-noticia {
+    padding: 10px;
+}
+
+.timestamp {
+    color: #2F4F4F;
+}
+
+.conteudo-noticia {
+    padding: 10px;
+}
+
+.noticia-imagem img {
+    width: 100%;
+}
+
+.icon-acao {
+    color: #000;
+    font-size: 20px;
+}
+
+/* 
+    * Estilizando a página DeletarNoticia.php
+*/
+
+.box-deletar {
+    width: 90%;
+    background-color: #d3d3d3;
+}
+
+.header-deletar {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.main-forms-deletar {
+    padding: 10px;
+}
+
+.noticia-deletar, .noticia-deletar-confirmar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.btn-deletar-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-deletar {
+    width: 60%;
+    background-color: #2F4F4F;
+    outline: none;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 10px;
+}
+
+/*  
+    * Estilizando a página EditarNoticia.php
+*/
+
+.box-editarnoticia {
+    width: 90%;
+    background-color: #d3d3d3;
+}
+
+.header-editar {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.noticias {
+    padding: 10px;
+}

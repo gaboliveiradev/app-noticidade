@@ -1,0 +1,13 @@
+Listar Dados do MySql na View
+
+1 - Criar o metodo que faz o select na DAO
+2 - Cria o metodo "fantoche" na MODEL
+3 - Criar a table na VIEW
+4 - Instanciar a MODEL na CONTROLLER e chamar a VIEW
+
+MySQL -> Select() -> GetAllRow() -> Index() -> Table
+
+Select() = DAO
+GetAllRow() = Model
+Index() = Controller
+Table = View
